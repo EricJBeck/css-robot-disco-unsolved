@@ -1,0 +1,106 @@
+.robot-eye-right {
+    animation: right-eye 1s linear infinite alternate;
+}
+
+@keyframes right-eye {
+    0% {
+        right: 30%;
+        top: 20%;
+    }
+
+    100% {
+        top: 15%;
+    }
+}
+
+.robot-eye-left {animation: right-eye 5s ease-in-out infinite;
+}
+
+@keyframes left-eye {
+    0% {
+        top: 25%;
+        right: 30%;
+        background-color: green;
+    }
+    25% {
+        right: 10%;
+        background-color: rgb(1, 185, 1);
+    }
+    50% {
+        top: 10%;
+        right: 30%;
+        background-color: rgb(0, 236, 0);
+    }
+    75% {
+        right: 10%;
+        background-color: rgb(1, 185, 1);
+    }
+    100% {
+        top: 25%;
+        right: 30%;
+        background-color: green;
+    }
+}
+
+.robot-ear-left {
+    animation: left-ear 1s ease-in-out infinite alternate;
+}
+
+@keyframes left-ear {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(90deg);
+    }
+}
+
+.robot-ear-right {
+    animation: right-ear 1s ease-in-out infinite alternate;
+}
+
+@keyframes right-ear {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(-90deg);
+    }
+}
+
+.robot-nose:hover {
+    transform: scale(3);
+}
+
+.robot-teeth {
+    animation: teeth 5s ease-out infinite alternate;
+}
+
+@keyframes teeth {
+    from {
+        opacity: 1;
+    }
+
+    to {
+        opacity: 0;
+    }
+}
+
+.robot-hair-style {
+    animation: hair 4s ease-in-out infinite alternate;
+}
+
+@keyframes hair {
+    from {
+        scale: 1;
+    }
+    to {
+        scale: 0.7;
+    }
+}
+
+.robot-hair-two:hover {
+    background-color: aquamarine;
+}
